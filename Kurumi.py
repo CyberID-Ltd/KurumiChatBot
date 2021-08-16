@@ -103,14 +103,14 @@ async def repo(_, message):
     )
 
 
-@luna.on_message(filters.command("help, "help@TokisakiChatBot") & ~filters.edited)
+@luna.on_message(filters.command(["help, "help@TokisakiChatBot"]) & ~filters.edited)
 async def start(_, message):
     await luna.send_chat_action(message.chat.id, "typing")
     await sleep(2)
     await message.reply_text("/help - To See This Message\n/repo - Get Repo Link\n/about - About My Creator\n\nIm a chatbot designed for chatting with you,\nSend me any message then i can reply you!")
 
 
-@luna.on_message(filters.command("about", "about@TokisakiChatBot") & ~filters.edited)
+@luna.on_message(filters.command(["about", "about@TokisakiChatBot"]) & ~filters.edited)
 async def start(_, message):
     await luna.send_chat_action(message.chat.id, "typing")
     await sleep(2)
@@ -169,6 +169,8 @@ async def main():
         """
     -----------------
    | Kurumi Started! |
+    -----------------
+   | By Yoga Pranata |
     -----------------
 """
     )
