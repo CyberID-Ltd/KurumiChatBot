@@ -55,7 +55,7 @@ async def type_and_send(message):
     await message._client.send_chat_action(chat_id, "typing")
     response, _ = await gather(lunaQuery(query, user_id), sleep(2))
     if "Luna" in response:
-        responsee = response.replace("Luna", "Tokisaki Kurumi")
+        responsee = response.replace("Luna", "Kurumi")
     else:
         responsee = response
     if "Aco" in responsee:
@@ -66,7 +66,31 @@ async def type_and_send(message):
         responsess2 = responsess.replace("Who is kurumi?", "I'm Kurumi, who are you?")
     else:
         responsess2 = responsess
-    await message.reply_text(responsess2)
+    if "Who is yoga?" in responsess2:
+        responsess3 = responsess2.replace("Who is yoga?", "Yoga is My Darling😘")
+    else:
+        responsess3 = responsess2
+    if "luna" in responsess3:
+        responsess4 = responsess3.replace("luna", "kurumi")
+    else:
+        responsess4 = responsess3
+    if "aco" in responsess4:
+        responsess5 = responsess4.replace("aco", "kurumi")
+    else:
+        responsess5 = responsess4
+    if "Who is Yoga?" in responssess5:
+        responsess6 = responsess5.replace("Who is Yoga?", "Yoga is My Darling😘")
+    else:
+        responsess6 = responsess5
+    if "Who is yoga" in responsess6:
+        responsess7 = responsess6.replace("Who is yoga", "Yoga is My Darling😘")
+    else:
+        responsess7 = responsess6
+    if "Who is kurumi" in responsess7:
+        responsess8 = responsess7.replace("Who is kurumi", "I'm Kurumi, Who aare you?")
+    else:
+        responsess8 = responsess7
+    await message.reply_text(responsess8)
     await message._client.send_chat_action(chat_id, "cancel")
 
 
@@ -79,24 +103,24 @@ async def repo(_, message):
     )
 
 
-@luna.on_message(filters.command("help") & ~filters.edited)
+@luna.on_message(filters.command("help, "help@TokisakiChatBot") & ~filters.edited)
 async def start(_, message):
     await luna.send_chat_action(message.chat.id, "typing")
     await sleep(2)
-    await message.reply_text("/repo - Get Repo Link\n/about - About My Creator\n\nIm a chatbot designed for chatting with you,\nSend me any message then i can reply you!")
+    await message.reply_text("/help - To See This Message\n/repo - Get Repo Link\n/about - About My Creator\n\nIm a chatbot designed for chatting with you,\nSend me any message then i can reply you!")
 
 
-@luna.on_message(filters.command("about") & ~filters.edited)
+@luna.on_message(filters.command("about", "about@TokisakiChatBot") & ~filters.edited)
 async def start(_, message):
     await luna.send_chat_action(message.chat.id, "typing")
     await sleep(2)
-    await message.reply_text("😘My Darling is @Yoga_CIC\nBuilt with ❤ and Pyrogram.\n\nSupport chat: @YBotsSupport\nUpdate channel: @SpreadNetworks")
+    await message.reply_text("😘My Darling is @Yoga_CIC\nI was born in @YBotsSupport\nSee List of My Other Brother/Sisters on @SpreadNetworks\n\nBuilt with ❤ and Pyrogram.")
 
 
 @luna.on_message(
     ~filters.private
     & filters.text
-    & ~filters.command(["start", "start@KurumiChatBot"])
+    & ~filters.command(["start", "start@TokisakiChatBot"])
     & ~filters.edited,
     group=69,
 )
@@ -109,7 +133,7 @@ async def chat(_, message):
             return
     else:
         match = re.search(
-            "[.|\n]{0,}rika[.|\n]{0,}",
+            "[.|\n]{0,}kurumi[.|\n]{0,}",
             message.text.strip(),
             flags=re.IGNORECASE,
         )
@@ -120,7 +144,7 @@ async def chat(_, message):
 
 @luna.on_message(
     filters.private
-    & ~filters.command(["start", "start@kurumiChatBot"])
+    & ~filters.command(["start", "start@TokisakiChatBot"])
     & ~filters.edited
 )
 async def chatpm(_, message):
@@ -130,7 +154,7 @@ async def chatpm(_, message):
     await type_and_send(message)
 
 
-@luna.on_message(filters.command(["start", "start@KurumiChatBot"]) & ~filters.edited)
+@luna.on_message(filters.command(["start", "start@TokisakiChatBot"]) & ~filters.edited)
 async def startt(_, message):
     await message.reply_text("Hi there, my name is Tokisaki Kurumi :)")
 
