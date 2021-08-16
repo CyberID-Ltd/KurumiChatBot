@@ -16,9 +16,18 @@ A public running instance can be found on telegram as [@TokisakiChatBot](https:/
 1. `git clone https://github.com/zYxDevs/KurumiChatBot`
 2. `cd KurumiChatBot`
 3. `pip3 install -r requirements.txt` to install the requirements.
-4. Edit `config.py` with your own values.!
+4. Edit `sample_config.py` to `config.py` with your own values.!
 5. Run with `python3.9 Kurumi.py`
 
 
-## FOR HERUKO:
+## FOR HEROKU:
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zYxDevs/KurumiChatBot)
+
+## Credits
+[Yoga Pranata](https://t.me/Yoga_CIC)<br>
+[TheHamkerCat](https://github.com/TheHamkerCat)<br>
+[ÁÑÑÍHÌLÅTØR SPÄRK](https://github.com/annihilatorrrr)
+
+**Original Repo**<br>
+[LunaChatBot](https://github.com/TheHamkerCat/LunaChatBot)<br>
+[RikaChatBot](https://github.com/Friends-Zone/rikachatbot)
