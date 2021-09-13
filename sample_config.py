@@ -19,7 +19,7 @@ else:
   bot_token = str(environ.get("TOKEN", None))
   ARQ_API_KEY = str(environ.get("ARQ_API_KEY", None))
   LANGUAGE = str(environ.get("LANGUAGE", "en"))
-  ID = int(environ.get("ID", 6)) # your api id
-  HASH = str(environ.get("HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")) # your apihash
+  ID = int(environ.get("APP_ID", 6)) # your api id
+  HASH = str(environ.get("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")) # your apihash
   # Leave it as it is
   ARQ_API_BASE_URL = str(environ.get("ARQ_API_BASE_URL", None))
