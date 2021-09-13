@@ -16,12 +16,12 @@
             "description": "Obtain a Telegram bot token by contacting @BotFather",
             "required": true
         },
-        "HASH": {
+        "API_HASH": {
             "description": "API hash.",
             "required": true
         },
-        "ID": {
-            "description": "API ID.",
+        "APP_ID": {
+            "description": "APP ID.",
             "required": true
         },
         "ARQ_API_BASE_URL": {
