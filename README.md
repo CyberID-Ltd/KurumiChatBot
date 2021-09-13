@@ -11,7 +11,7 @@ A public running instance can be found on telegram as [@TokisakiChatBot](https:/
 - A [bot token](//t.me/botfather).
 
 
-## Installation
+## Local Deploy:
 
 1. `git clone https://github.com/zYxDevs/KurumiChatBot`
 2. `cd KurumiChatBot`
@@ -20,7 +20,7 @@ A public running instance can be found on telegram as [@TokisakiChatBot](https:/
 5. Run with `python3.9 Kurumi.py`
 
 
-## FOR HEROKU:
+## Hemroku User:
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zYxDevs/KurumiChatBot)
 
 ## Credits
